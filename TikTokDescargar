@@ -1,0 +1,190 @@
+
+mal0ctal
+/
+TikTokDescargar
+Público
+bifurcado de Johnserf-Seed/TikTokDescargar
+抖音去水印批量下载用户主页作品、喜欢、图文、音频
+
+Licencia
+ licencia MIT
+ 1 estrella 524 tenedores 
+Código
+Solicitudes de extracción
+Comportamiento
+Proyectos
+Seguridad
+Perspectivas
+Evil0ctal/TikTokDescargar
+Esta rama tiene 2 confirmaciones por delante , 1 confirmación por detrás de Johnserf-Seed:main .
+Última confirmación
+@Evil0ctal
+mal0ctal
+…
+hace 2 semanas
+Estadísticas de Git
+archivos
+LÉAME.md
+
+TikTokDescargar
+✨抖音去水印视频下载✨
+
+     
+
+Inglés 简体中文
+
+使用教程
+运行软件前先打开目录下conf.ini文件按照要求进行配置
+批量下载使用TikTokTool，直接修改配置文件；单一视频下载推荐TikTokWeb项目在线解析；TikTokMulti不再维护。
+
+TikTokHerramienta	TikTokMulti
+	
+新版配置文件conf.ini	旧版配置文件conf.conf
+本项目制作了pip包，可以输入pip install TikTokDownload==1.2.3安装 (1.2.3没有及时更新到1.3.0，请勿安装)
+imagen
+
+imagen
+
+包使用方法：
+
+# example.py
+import TikTokDownload as TK
+import Util
+
+# 单视频下载
+# TK.video_download(*TK.main())
+
+# 批量下载
+if __name__ == '__main__':
+    # 获取命令行参数
+    cmd = Util.Command()
+    # 获取用户主页数据
+    profile = Util.Profile()
+    # 使用参数，没有则使用默认参数并下载
+    profile.getProfile(cmd.setting())
+	# 如果需要定时下载则注释这个input
+    input('[  完成  ]:已完成批量下载，输入任意键后退出:')
+example.py需 确保__init__.py与TikTokDownload.py两 个 文件 都 在 相同 目录 中 example.py需 确保__init__.py与TikTokDownload.py两 个 文件 都 在 相同 中 example.py需 需 确保 两__init__.py个TikTokDownload.py文件 都 在 相同 目录 中 重要 的 话 三 遍 遍 遍遍 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三 三.
+
+如何编译
+
+运行根目录下build.bat文件按控制台提示即可，生成的exe在./dist目录中
+
+批量保存
+
+下载录制
+imagen
+
+直播推流
+imagen
+跳过已下载
+imagen
+
+图文下载
+imagen
+
+全部下载
+imagen
+资源文件夹
+imagen
+problemas _ _
+
+imagen
+
+单一下载TikTokDownload模式;批量下载TikTokMulti模式;图文下载;测试TikTokPic版图形界面TikTokMultiGUI
+注意（常见错误）:
+
+单个视频链接与用户主页链接要分清，软件闪退可以通过终端运行查看报错信息（一般是链接的（一般是链接皼
+
+如：
+
+imagen
+imagen
+链接一定要输入仔细,配置文件只支持用户主页
+
+imagen
+出现 报 用户 昵称 错误 的 情况 需要 在 主页 发布 一 条 视频 ， 原因 见获取 用户 昵称 失败 失败 ——— 主页 若空 作品 则 无法 下载 喜欢 页 页
+
+配置文件一定要注意编码格式（推荐Bloc de notas++）
+
+正确:
+
+imagen
+
+错误：
+
+imagen
+
+挺抽风的，另存为的UTF-8居然不可以会闪退，玄学
+
+如果出现长时间的api抓取可能是姿势不对（抖音api服务器会抽）
+现在新增了日志功能，可以在logs中找到所有的日志文件，汇报issue的时候可以附上
+
+
+
+
+Nuevo
+15/09
+
+imagen
+
+imagen
+
+30/08
+
+imagen
+
+imagen
+
+imagen
+
+05/01 更新了无水印图集下载功能 ->TikTokPic.py
+
+imagen
+
+imagen
+
+04/23 后 的 新版 支持 解析 1080P 分辨率 视频 （注 ， 虽然 下载 的 是 1080P ， 但是 原 不 满足 1080P 的 情况 下 ， 即使 下载 下载 到 也 还是 原本 分辨率））））））））））））））））））））））））））））
+
+720p对比1080p
+
+imagen
+
+Interfaz gráfica de usuario
+
+imagen
+
+可自行在GUI文件夹内编译ui -> pyuic5 -o Main.py Main.ui
+
+V1.3.0控制台界面版本
+
+imagen
+
+uTools插件同步开发中...
+
+imagen
+
+imagen
+
+imagen
+
+Hacer
+无水印图集下载功能
+可视化界面
+支持多平台视频解析
+记录作品详细信息到本地数据库
+本地服务检测抖音关注用户作品的更新情况(并推送)
+所有已关注用户主页的视频批量下载的可选功能
+直播推流保存
+制作本地接口解析服务
+Web版项目
+Johnserf-Seed/TikTokWeb
+
+imagen
+
+imagen
+
+
+声明
+本项目只做个人学习研究之用，不得用于商业用途！
+Lanzamientos
